@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body
 {
   margin:0;
@@ -16,10 +16,7 @@ header .container
   box-sizing: border-box;
   transition: .5s;
 }
-header .container:hover
-{
-  background: #000000;
-}
+header .container:hover{background: #000000;}
 header .container .firstBox
 {
   width: 74%;
@@ -53,7 +50,6 @@ header .container .secondBox .pic
   box-shadow: 5px 10px #39308d;
   float: center;
 }
-
 mainContent
 {
   display: block;
@@ -147,25 +143,19 @@ div.languageContainer
     background-color: rgb(149, 30, 173);
     transition: .5s;
 }
-.cs:hover {
-    background-color: rgb(112, 24, 129);
-}
+.cs:hover {background-color: rgb(112, 24, 129);}
 .python {
     width: 65%;
     background-color: rgb(248, 200, 68);
     transition: .5s;
 }
-.python:hover {
-    background-color: rgb(201, 161, 54);
-}
+.python:hover {background-color: rgb(201, 161, 54);}
 .html {
     width: 30%;
     background-color: rgb(231, 111, 55);
     transition: .5s;
 }
-.html:hover {
-    background-color: rgb(189, 93, 48);
-}
+.html:hover {background-color: rgb(189, 93, 48);}
 .skills {
     text-align: right;
     padding-top: 10px;
@@ -183,48 +173,38 @@ div.languageContainer
 }
 .projects
 {
-  height: 1170px;
+  height: 920px;
   width: 90%;
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 2.5%;
-  margin-bottom: 5%;
-  background: #39308d;
+  margin-bottom: 2.5%;
+  /*background: #39308d;*/
   transition: .5s;
 }
-.projects:hover
-{
-  background: #000000;
-}
-.prj1
+.projects:hover{background: #000000;}
+div.prj1
 {
   width: 47%;
-  height: 80%;
+  height: 50%;
   margin-top: 1.5%;
   margin-left: 2.5%;
   margin-right: 2.5%;
   float: left;
   color: white;
 }
-h3
+h3{font-size: 50px;}
+a{font-size: 20px;}
+h4{font-size: 25px;}
+ul{font-size: 25px;}
+p2{font-size: 25px;}
+.pic1
 {
-  font-size: 50px;
-}
-a
-{
-  font-size: 20px;
-}
-h4
-{
-  font-size: 25px;
-}
-ul
-{
-  font-size: 25px;
-}
-p2
-{
-  font-size: 25px;
+  float: right;
+  margin-top: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 1.5%;
+  background: white;
 }
 .pic2
 {
@@ -232,7 +212,82 @@ p2
   margin-top: 2.5%;
   margin-right: 2.5%;
   margin-bottom: 1.5%;
+  background: white;
 }
+.pic3
+{
+  float: left;
+  margin-top: 5.5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+  background: white;
+}
+.hobbiesContent
+{
+  margin-top: 3.5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-bottom: 3.5%;
+  color: white;
+  /*background: #39308d;*/
+}
+.hobbiesContent .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  transition: .5s;
+}
+.hobbiesContent .grid-container:hover {background: black;}
+.hobbiesContent .grid-container .grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#mediaTable {
+  font-size: 30px;
+  margin-top: 3.5%;
+  margin-right: 5.5%;
+  margin-left: 10.5%;
+  margin-bottom: 3.5%;
+  border-collapse: collapse;
+  width: 75%;
+  color: white;
+  background: #39308d2c;
+  text-align: center;
+}
+#mediaTable td, #mediaTable th { padding: 8px; }
+#mediaTable tr:nth-child(even){background-color: #3bb1df2c;}
+#mediaTable tr:hover {background-color: black;}
+#mediaTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #39308d;
+  color: white;
+}
+.site-footer {
+  background-color: #39308d;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
+}
+#social-wrapper {text-align: center;}
+.social-wrapper {text-align: center;}
+.social-wrapper ul li { display: inline; margin: 0 5px;}
+.linkedin-icon,
+.github-icon
+{
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+	filter: alpha(opacity=60);
+  border-radius: 25px;
+  transition: .5s;
+}
+.linkedin-icon:hover,
+.github-icon:hover { opacity: 1.0; filter: alpha(opacity=100); background: rgba(0, 0, 0, 0.432); }
 
 @media only screen and (max-width: 991px)
 {
@@ -275,7 +330,7 @@ p2
     width: 200px;
     height: 200px;
   }
-  div .mainContent .languages .languageContent
+  div.mainContent div.languages div.languageContent
   {
     width: 100%;
     height: auto;
