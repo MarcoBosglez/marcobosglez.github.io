@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Calculadora de IMC</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<div class="headerContainer">
+			<div class="headerText">
+				<h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
+			</div>
+		</div>
+	</header>
+
+	<div class="outsideCalculadora">
+		<div class="insideCalculadora">
+			<script src="script.js"></script>
+
+			<div class="ingresarTexto">
+				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				<form class="w3-container">
+					<p>
+						<input class="w3-input" type="text" id="peso">
+          <label>Ingresa tu peso (kg)</label></p>
+
+          <p>
+          <input class="w3-input" type="text" id="altura">
+          <label>Ingresa tu altura (m)</label></p>
+        </form>
+
+        <div class = "boton">
+          <input class="button" type="submit" value="Enviar" onclick="calcularIMC();"></input>
+        </div>
+      </div>
+
+
+      <div class = "results">
+        <h1>Tu IMC es: <span id="resultado">?</span></h1>
+        <h2>Se considera: <span id="comment"> ?</span> </h2> 
+      </div>
+    </div>
+    <div class="insideCalculadora">
+      <div class = "extraInfo">
+        <p>El resultado es clasificado en: </p>
+        <p>IMC menor o igual a 18,5 – se considera bajo de peso.</p>
+        <p>IMC entre 18,5 y 24,9 – se considera peso saludable.</p>
+        <p>IMC entre 25 y 29,9 – se considera sobrepeso.</p>
+        <p>IMC entre 30 y 34,9 – se considera obesidad de grado 1</p>
+        <p>IMC entre 35 y 39,9 – se considera obesidad de grado 2</p>
+        <p>IMC igual o superior a 40 – se considera obesidad mórbida.</p>
+      </div>
+    </div>
+    
+  </div>
+
+
+    <footer>
+      <div class="social-wrapper">
+        <ul>
+          <li>
+            <a href="https://github.com/MarcoBosglez" target="_blank">
+              <img src="img/github.png" alt="Github Logo" class="github-icon"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/marco-bosquez-5580271a1/" target="_blank">
+              <img src="img/linkedin.png" alt="Linkedin Logo" class="linkedin-icon"></a>
+          </li>
+        </ul> 
+      </div>
+    </footer>
+
+
+  </body>
+
+</html>
