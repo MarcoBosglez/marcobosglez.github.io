@@ -1,4 +1,3 @@
-# Web
-Creación de página web: https://marcobosglez.github.io/index.html
-
-https://nuevo.marcobosglez.repl.co/
+# Creación de página web
+Curriculum https://marcobosglez.github.io/CV/index.html
+Calculadora IMC https://marcobosglez.github.io/IMC/calculadoraIMC.html
